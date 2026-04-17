@@ -2,64 +2,87 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
+    <main className="min-h-screen overflow-x-hidden bg-black text-white">
+      <section className="min-h-screen px-8 pt-8 md:px-14 xl:px-20">
+        
+        {/* HEADER */}
+        <header className="flex items-center justify-between border-b border-white/10 pb-6">
+          
+          {/* FIXED LOGO */}
+          <div className="flex items-center">
+            <div className="relative h-[52px] w-[270px] overflow-hidden">
+              <img
+                src="/images/logo.png"
+                alt="Kliqture logo"
+                className="absolute top-1/2 h-[52px] max-w-none -translate-y-1/2"
+              />
+            </div>
+          </div>
+
           <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSd0MTpkp6CDCv0SGpcIY3f-Fg977ICWmjUufv93ZuATCPzMFA/viewform?usp=publish-editor"
             target="_blank"
-            rel="noopener noreferrer"
+            className="rounded-full bg-blue-600/90 px-6 py-2.5 text-sm"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
+            Request Access
           </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+        </header>
+
+        {/* HERO */}
+        <div className="grid min-h-[calc(100vh-110px)] grid-cols-1 items-center gap-8 lg:grid-cols-[0.95fr_1.2fr]">
+          
+          {/* LEFT CONTENT */}
+          <div className="max-w-[580px] pt-12 md:pt-20 lg:pt-0">
+            
+            <h1 className="text-[60px] font-semibold leading-[1.03] tracking-[-0.045em] md:text-[72px] lg:text-[80px]">
+              Where creative work actually gets done
+            </h1>
+
+            <p className="mt-12 text-[18px] leading-8 text-white/58">
+              Kliqture is a structured work and collaboration platform for
+              creators, brands, and teams - combining workrooms, milestones,
+              tasks, and real execution in one place.
+            </p>
+
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSd0MTpkp6CDCv0SGpcIY3f-Fg977ICWmjUufv93ZuATCPzMFA/viewform?usp=publish-editor"
+              target="_blank"
+              className="mt-16 inline-flex rounded-full bg-blue-600 px-12 py-5 text-[19px] font-medium tracking-tight text-white transition hover:bg-blue-500"
+            >
+              Request Early Access
+            </a>
+          </div>
+
+          {/* RIGHT MOCKUPS */}
+          <div className="relative h-[760px] w-full md:h-[840px] lg:h-[900px]">
+            
+            {/* BACK IMAGE */}
+            <div className="absolute left-[4%] top-[90px] z-10 h-[470px] w-[470px] opacity-45 md:h-[560px] md:w-[560px] lg:h-[620px] lg:w-[620px]">
+              <Image
+                src="/images/hero_2.png"
+                alt="Kliqture workroom preview"
+                fill
+                priority
+                className="object-contain"
+                sizes="(max-width: 768px) 470px, (max-width: 1200px) 560px, 620px"
+              />
+            </div>
+
+            {/* FRONT IMAGE */}
+            <div className="absolute left-[40%] top-[80px] z-20 h-[460px] w-[460px] md:h-[560px] md:w-[560px] lg:h-[620px] lg:w-[620px]">
+              <Image
+                src="/images/hero.png"
+                alt="Kliqture creator preview"
+                fill
+                priority
+                className="object-contain drop-shadow-[0_30px_120px_rgba(0,0,0,0.75)]"
+                sizes="(max-width: 768px) 460px, (max-width: 1200px) 560px, 620px"
+              />
+            </div>
+
+          </div>
         </div>
-      </main>
-    </div>
+      </section>
+    </main>
   );
 }
