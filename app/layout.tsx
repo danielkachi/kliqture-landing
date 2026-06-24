@@ -10,8 +10,8 @@ export const metadata = {
   title: "Kliqture",
   description: "Where creative work actually gets done",
   icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon-16x16.png",
+    icon: "/favicon.svg",
+    shortcut: "/favicon.svg",
     apple: "/apple-touch-icon.png",
   },
 };

@@ -5,14 +5,15 @@ export default function Home() {
     <main className="min-h-screen overflow-x-hidden bg-black text-white">
       <section className="min-h-screen px-5 pt-6 md:px-14 md:pt-8 xl:px-20">
         <header className="flex items-center justify-between border-b border-white/10 pb-4 md:pb-6">
-          <div className="flex items-center">
-            <div className="relative h-[44px] w-[230px] overflow-hidden md:h-[52px] md:w-[270px]">
-              <img
-                src="/images/logo.png"
-                alt="Kliqture logo"
-                className="absolute top-1/2 h-[44px] max-w-none -translate-y-1/2 md:h-[52px]"
-              />
-            </div>
+          <div className="flex items-center gap-3">
+            <img
+              src="/images/logo-icon.svg"
+              alt="Kliqture logo"
+              className="h-[38px] w-[38px] md:h-[46px] md:w-[46px]"
+            />
+            <span className="text-[32px] font-semibold tracking-[-0.04em] md:text-[40px]">
+              Kliqture
+            </span>
           </div>
 
           <a
@@ -71,6 +72,23 @@ export default function Home() {
             </div>
           </div>
         </div>
+
+        <section
+          id="company"
+          className="border-t border-white/10 py-10 text-sm leading-7 text-white/55 md:py-12"
+        >
+          <h2 className="text-base font-medium text-white">Company</h2>
+          <p className="mt-3 max-w-3xl">
+            Kliqture is operated by Blueprint Fintech Solutions Ltd. Kliqture
+            remains the consumer-facing brand for the structured work and
+            collaboration platform used by creators, brands, and teams.
+          </p>
+        </section>
+
+        <footer className="border-t border-white/10 py-6 text-xs text-white/45 md:flex md:items-center md:justify-between">
+          <p>© 2026 Kliqture. Operated by Blueprint Fintech Solutions Ltd.</p>
+          <p className="mt-2 md:mt-0">Kliqture is a product of Blueprint Fintech Solutions Ltd.</p>
+        </footer>
       </section>
     </main>
   );
