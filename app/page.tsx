@@ -87,7 +87,14 @@ export default function Home() {
 
         <footer className="border-t border-white/10 py-6 text-xs text-white/45 md:flex md:items-center md:justify-between">
           <p>© 2026 Kliqture. Operated by Blueprint Fintech Solutions Ltd.</p>
-          <p className="mt-2 md:mt-0">Kliqture is a product of Blueprint Fintech Solutions Ltd.</p>
+          <div className="mt-3 flex flex-wrap gap-4 md:mt-0">
+            <a className="transition hover:text-white" href="/privacy">
+              Privacy Policy
+            </a>
+            <a className="transition hover:text-white" href="/terms">
+              Terms of Service
+            </a>
+          </div>
         </footer>
       </section>
     </main>
