@@ -1,4 +1,5 @@
 import "./globals.css";
+import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 
 const inter = Inter({
@@ -6,14 +7,35 @@ const inter = Inter({
   variable: "--font-inter",
 });
 
-export const metadata = {
-  title: "Kliqture",
-  description: "Where creative work actually gets done",
+export const metadata: Metadata = {
+  title: "Kliqture | Professional Collaboration Marketplace",
+  description:
+    "Discover skilled professionals, manage project-based engagements, collaborate through structured workrooms, track milestones and deliverables, and keep professional work connected in one platform.",
+  applicationName: "Kliqture",
+  openGraph: {
+    title: "Kliqture | Professional Collaboration Marketplace",
+    description:
+      "Discover skilled professionals, manage project-based engagements, collaborate through structured workrooms, track milestones and deliverables, and keep professional work connected in one platform.",
+    siteName: "Kliqture",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Kliqture | Professional Collaboration Marketplace",
+    description:
+      "Discover skilled professionals, manage project-based engagements, collaborate through structured workrooms, track milestones and deliverables, and keep professional work connected in one platform.",
+  },
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",
     apple: "/apple-touch-icon.png",
   },
+  manifest: "/site.webmanifest",
+};
+
+export const viewport: Viewport = {
+  themeColor: "#000000",
+  colorScheme: "dark",
 };
 
 export default function RootLayout({

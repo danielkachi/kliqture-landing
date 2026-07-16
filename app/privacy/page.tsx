@@ -1,4 +1,11 @@
-import Link from "next/link";
+import type { Metadata } from "next";
+import { LegalPageLayout } from "@/components/site/LegalPageLayout";
+
+export const metadata: Metadata = {
+  title: "Privacy Policy | Kliqture",
+  description:
+    "How Kliqture collects, uses, and protects information across accounts, profiles, workrooms, deliverables, and payment-related workflows.",
+};
 
 const sections = [
   {
@@ -14,7 +21,7 @@ const sections = [
       "We may collect account information such as your name, email address, username, password-related authentication data, profile details, professional information, portfolio content, and preferences.",
       "We may collect content you upload or create on Kliqture, including images, videos, documents, work samples, project details, collaboration requests, messages, deliverables, comments, and workroom activity.",
       "We may collect technical information such as device identifiers, IP address, operating system, app version, notification tokens, log data, and information needed to maintain security and performance.",
-      "Where payment features are used, we may collect transaction-related information such as milestone records, escrow-related activity, payment status, project amounts, and payout-related records. Kliqture does not store full payment card details; payment processing may be handled by third-party payment providers.",
+      "Where payment features are used, we may collect transaction-related information such as milestone records, funded milestone activity, payment status, project amounts, and payout-related records. Kliqture does not store full payment card details; payment processing may be handled by third-party payment providers.",
     ],
   },
   {
@@ -56,7 +63,7 @@ const sections = [
     ],
   },
   {
-    title: "9. Children’s Privacy",
+    title: "9. Children's Privacy",
     body: [
       "Kliqture is intended for users who are 18 years of age or older. We do not knowingly collect personal information from children.",
     ],
@@ -77,43 +84,11 @@ const sections = [
 
 export default function PrivacyPolicy() {
   return (
-    <main className="min-h-screen bg-black px-5 py-10 text-white md:px-12 lg:px-20">
-      <article className="mx-auto max-w-4xl">
-        <Link href="/" className="text-sm text-white/60 transition hover:text-white">
-          ← Back to Kliqture
-        </Link>
-
-        <header className="mt-10 border-b border-white/10 pb-8">
-          <p className="text-sm uppercase tracking-[0.35em] text-white/45">
-            Legal
-          </p>
-          <h1 className="mt-4 text-4xl font-semibold tracking-tight md:text-6xl">
-            Privacy Policy
-          </h1>
-          <p className="mt-4 max-w-2xl text-sm leading-7 text-white/60 md:text-base">
-            This Privacy Policy explains how Kliqture collects, uses, and
-            protects information when you use our platform.
-          </p>
-          <p className="mt-4 text-sm text-white/45">
-            Last updated: June 30, 2026
-          </p>
-        </header>
-
-        <div className="mt-10 space-y-10">
-          {sections.map((section) => (
-            <section key={section.title}>
-              <h2 className="text-xl font-semibold text-white">
-                {section.title}
-              </h2>
-              <div className="mt-4 space-y-4 text-sm leading-7 text-white/65 md:text-base">
-                {section.body.map((paragraph) => (
-                  <p key={paragraph}>{paragraph}</p>
-                ))}
-              </div>
-            </section>
-          ))}
-        </div>
-      </article>
-    </main>
+    <LegalPageLayout
+      title="Privacy Policy"
+      description="This Privacy Policy explains how Kliqture collects, uses, and protects information when you use our platform."
+      lastUpdated="June 30, 2026"
+      sections={sections}
+    />
   );
 }

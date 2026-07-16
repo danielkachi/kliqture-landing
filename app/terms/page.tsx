@@ -1,4 +1,11 @@
-import Link from "next/link";
+import type { Metadata } from "next";
+import { LegalPageLayout } from "@/components/site/LegalPageLayout";
+
+export const metadata: Metadata = {
+  title: "Terms of Service | Kliqture",
+  description:
+    "The terms governing access to Kliqture, including accounts, workrooms, collaboration, payments, milestones, content, and platform use.",
+};
 
 const sections = [
   {
@@ -36,9 +43,10 @@ const sections = [
     ],
   },
   {
-    title: "6. Payments, Escrow, and Milestones",
+    title: "6. Payments, Funded Milestones, and Payouts",
     body: [
-      "Kliqture may facilitate project payments, escrow-style workflows, milestone payments, and related transaction records through third-party payment providers.",
+      "Kliqture may facilitate project payments, funded milestone workflows, milestone-linked payments, and related transaction records through third-party payment providers.",
+      "Clients fund agreed milestones through supported payment providers. Professional payouts remain pending until the submitted work is reviewed and approved.",
       "Kliqture is not a bank, deposit-taking institution, or financial adviser. Payment processing, settlement, refunds, chargebacks, and payouts may be subject to the terms and policies of third-party payment providers.",
       "Fees may apply to certain transactions or platform features. Where applicable, fees will be disclosed before completion of the relevant transaction.",
     ],
@@ -61,7 +69,7 @@ const sections = [
   {
     title: "9. Disclaimers",
     body: [
-      "Kliqture is provided on an “as is” and “as available” basis. We do not guarantee that the platform will be uninterrupted, error-free, or that any user will achieve a particular outcome from using the service.",
+      "Kliqture is provided on an \"as is\" and \"as available\" basis. We do not guarantee that the platform will be uninterrupted, error-free, or that any user will achieve a particular outcome from using the service.",
     ],
   },
   {
@@ -86,43 +94,11 @@ const sections = [
 
 export default function TermsOfService() {
   return (
-    <main className="min-h-screen bg-black px-5 py-10 text-white md:px-12 lg:px-20">
-      <article className="mx-auto max-w-4xl">
-        <Link href="/" className="text-sm text-white/60 transition hover:text-white">
-          ← Back to Kliqture
-        </Link>
-
-        <header className="mt-10 border-b border-white/10 pb-8">
-          <p className="text-sm uppercase tracking-[0.35em] text-white/45">
-            Legal
-          </p>
-          <h1 className="mt-4 text-4xl font-semibold tracking-tight md:text-6xl">
-            Terms of Service
-          </h1>
-          <p className="mt-4 max-w-2xl text-sm leading-7 text-white/60 md:text-base">
-            These Terms explain the rules for using Kliqture and the
-            responsibilities that apply to users of the platform.
-          </p>
-          <p className="mt-4 text-sm text-white/45">
-            Last updated: June 30, 2026
-          </p>
-        </header>
-
-        <div className="mt-10 space-y-10">
-          {sections.map((section) => (
-            <section key={section.title}>
-              <h2 className="text-xl font-semibold text-white">
-                {section.title}
-              </h2>
-              <div className="mt-4 space-y-4 text-sm leading-7 text-white/65 md:text-base">
-                {section.body.map((paragraph) => (
-                  <p key={paragraph}>{paragraph}</p>
-                ))}
-              </div>
-            </section>
-          ))}
-        </div>
-      </article>
-    </main>
+    <LegalPageLayout
+      title="Terms of Service"
+      description="These Terms explain the rules for using Kliqture and the responsibilities that apply to users of the platform."
+      lastUpdated="June 30, 2026"
+      sections={sections}
+    />
   );
 }

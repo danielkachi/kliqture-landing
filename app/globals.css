@@ -11,6 +11,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 96px;
 }
 
 body {
@@ -18,4 +19,40 @@ body {
   background: #000;
   color: #fff;
   font-family: var(--font-inter), Arial, Helvetica, sans-serif;
+}
+
+a,
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+::selection {
+  background: rgba(37, 99, 235, 0.45);
+  color: #fff;
+}
+
+.animate-device-float {
+  animation: device-float 9s ease-in-out infinite;
+}
+
+@keyframes device-float {
+  0%,
+  100% {
+    transform: translateX(-50%) translateY(0);
+  }
+
+  50% {
+    transform: translateX(-50%) translateY(-10px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
 }
