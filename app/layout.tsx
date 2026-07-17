@@ -25,12 +25,6 @@ export const metadata: Metadata = {
     description:
       "Discover skilled professionals, manage project-based engagements, collaborate through structured workrooms, track milestones and deliverables, and keep professional work connected in one platform.",
   },
-  icons: {
-    icon: "/favicon.svg",
-    shortcut: "/favicon.svg",
-    apple: "/apple-touch-icon.png",
-  },
-  manifest: "/site.webmanifest",
 };
 
 export const viewport: Viewport = {
