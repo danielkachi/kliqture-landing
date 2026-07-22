@@ -11,7 +11,7 @@ export const siteConfig = {
     linkedin: "https://www.linkedin.com/company/kliqture/",
   },
   joinFormUrl:
-    "https://docs.google.com/forms/d/e/1FAIpQLSd0MTpkp6CDCv0SGpcIY3f-Fg977ICWmjUufv93ZuATCPzMFA/viewform?usp=publish-editor",
+    "https://forms.gle/wVVQ7jk2f8iBEhmC6",
   legalLinks: [
     { label: "Privacy Policy", href: "/privacy" },
     { label: "Terms of Service", href: "/terms" },

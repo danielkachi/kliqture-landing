@@ -78,7 +78,7 @@ export function Header() {
             rel="noopener noreferrer"
             className="rounded-full bg-blue-600 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-blue-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-300"
           >
-            Join Kliqture
+            Join the Beta
           </a>
         </div>
 
@@ -136,7 +136,7 @@ export function Header() {
             onClick={() => setOpen(false)}
             className="mt-3 flex min-h-12 items-center justify-center rounded-full bg-blue-600 px-5 py-3 text-base font-medium text-white transition hover:bg-blue-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-300"
           >
-            Join Kliqture
+            Join the Beta
           </a>
         </nav>
       </div>

@@ -23,22 +23,21 @@ export default function Home() {
           <div className="mx-auto grid max-w-[1680px] items-center gap-12 xl:grid-cols-[minmax(640px,680px)_minmax(0,1fr)] xl:gap-6 2xl:grid-cols-[minmax(820px,900px)_minmax(0,1fr)] 2xl:gap-12">
             <div className="max-w-[900px]">
               <p className="text-xs font-semibold uppercase tracking-[0.28em] text-teal-300/85">
-                Professional collaboration, structured from start to finish
+                PROFESSIONAL DISCOVERY AND WORK EXECUTION, CONNECTED
               </p>
               <h1 className="mt-6 max-w-[900px] text-5xl font-semibold leading-[1.02] tracking-tight text-white md:text-7xl xl:text-[56px] 2xl:text-[74px]">
                 <span className="xl:block xl:whitespace-nowrap">
-                  Find trusted professionals.
+                  Show what you can do.
                 </span>{" "}
-                <span className="xl:block">Manage the work.</span>{" "}
+                <span className="xl:block">Find who you need.</span>{" "}
                 <span className="xl:block xl:whitespace-nowrap">
-                  Move with confidence.
+                  Get the work done.
                 </span>
               </h1>
               <p className="mt-7 max-w-2xl text-lg leading-8 text-white/64 md:text-xl md:leading-9">
-                Kliqture brings professional discovery, project-based
-                engagements, workrooms, milestones, deliverables, and payment
-                tracking into one connected platform for businesses and skilled
-                professionals.
+                Build a credible professional identity across multiple skills and real projects.
+                Discover the right expertise, connect for paid work or collaboration, and manage every
+                engagement from agreement to delivery in one connected platform.
               </p>
               <div className="mt-9 flex flex-col gap-3 sm:flex-row">
                 <a
@@ -47,7 +46,7 @@ export default function Home() {
                   rel="noopener noreferrer"
                   className="inline-flex min-h-12 items-center justify-center rounded-full bg-blue-600 px-7 py-3 text-base font-medium text-white transition hover:bg-blue-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-300"
                 >
-                  Join Kliqture
+                  Join the Beta
                 </a>
                 <a
                   href="#workflow"
