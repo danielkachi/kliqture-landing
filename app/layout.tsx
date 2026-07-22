@@ -8,22 +8,22 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Kliqture | Professional Collaboration Marketplace",
+  title: "Kliqture | Professional Work & Collaboration Platform",
   description:
-    "Discover skilled professionals, manage project-based engagements, collaborate through structured workrooms, track milestones and deliverables, and keep professional work connected in one platform.",
+    "Professionals and businesses showcase real work, discover the right people, and manage paid projects or collaborations from agreement to delivery in one connected platform.",
   applicationName: "Kliqture",
   openGraph: {
-    title: "Kliqture | Professional Collaboration Marketplace",
+    title: "Kliqture | Professional Work & Collaboration Platform",
     description:
-      "Discover skilled professionals, manage project-based engagements, collaborate through structured workrooms, track milestones and deliverables, and keep professional work connected in one platform.",
+      "Professionals and businesses showcase real work, discover the right people, and manage paid projects or collaborations from agreement to delivery in one connected platform.",
     siteName: "Kliqture",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Kliqture | Professional Collaboration Marketplace",
+    title: "Kliqture | Professional Work & Collaboration Platform",
     description:
-      "Discover skilled professionals, manage project-based engagements, collaborate through structured workrooms, track milestones and deliverables, and keep professional work connected in one platform.",
+      "Professionals and businesses showcase real work, discover the right people, and manage paid projects or collaborations from agreement to delivery in one connected platform.",
   },
 };
 

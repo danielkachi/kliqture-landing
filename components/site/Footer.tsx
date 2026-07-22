@@ -38,7 +38,7 @@ export function Footer() {
           <div>
             <p className="text-2xl font-semibold tracking-tight">Kliqture</p>
             <p className="mt-4 max-w-sm text-sm leading-7 text-white/56">
-              A professional collaboration marketplace operated by{" "}
+              A professional Work & Collaboration Platform operated by{" "}
               {siteConfig.companyName}
             </p>
             <p className="mt-6 text-sm text-white/45">

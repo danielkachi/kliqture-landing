@@ -30,7 +30,7 @@ export const faqs = [
   {
     question: "What is Kliqture?",
     answer:
-      "Kliqture is a professional collaboration marketplace for discovering skilled professionals, agreeing on work, managing engagements, tracking milestones, and keeping deliverables and payment activity connected.",
+      "Kliqture is a professional work and collaboration platform where professionals and businesses showcase real work, discover the right people, and manage paid projects or collaborations from agreement to delivery in one connected platform.",
   },
   {
     question: "Who can use Kliqture?",
