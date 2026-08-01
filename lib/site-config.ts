@@ -10,11 +10,11 @@ export const siteConfig = {
     instagram: "https://www.instagram.com/kliqture",
     linkedin: "https://www.linkedin.com/company/kliqture/",
   },
-  joinFormUrl:
-    "https://forms.gle/wVVQ7jk2f8iBEhmC6",
+  joinFormUrl: "https://forms.gle/wVVQ7jk2f8iBEhmC6",
   legalLinks: [
     { label: "Privacy Policy", href: "/privacy" },
     { label: "Terms of Service", href: "/terms" },
+    { label: "Child Safety Standards", href: "/child-safety" },
     { label: "Refund & Cancellation Policy", href: "/refund-policy" },
     { label: "Dispute Resolution", href: "/dispute-resolution" },
     { label: "Delete Account", href: "/delete-account" },

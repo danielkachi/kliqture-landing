@@ -4,7 +4,7 @@ import { Header } from "@/components/site/Header";
 
 type LegalSection = {
   title: string;
-  body: string[];
+  body: React.ReactNode[];
 };
 
 type LegalPageLayoutProps = {
@@ -87,8 +87,8 @@ export function LegalPageLayout({
                     {section.title}
                   </h2>
                   <div className="mt-4 space-y-4 text-sm leading-7 text-white/65 md:text-base md:leading-8">
-                    {section.body.map((paragraph) => (
-                      <p key={paragraph}>{paragraph}</p>
+                    {section.body.map((paragraph, paragraphIndex) => (
+                      <p key={paragraphIndex}>{paragraph}</p>
                     ))}
                   </div>
                 </section>

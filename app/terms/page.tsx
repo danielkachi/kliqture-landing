@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { LegalPageLayout } from "@/components/site/LegalPageLayout";
 
 export const metadata: Metadata = {
@@ -33,6 +34,8 @@ const sections = [
     body: [
       "Kliqture allows users to showcase work, discover collaborators, send collaboration requests, create workrooms, communicate with other users, share files, manage deliverables, and coordinate project activity.",
       "You agree not to use Kliqture to upload unlawful content, infringe intellectual property rights, harass others, defraud users, distribute malware, bypass platform payment flows, or interfere with the operation of the service.",
+      "You must not use Kliqture to create, upload, request, distribute, promote, store, or facilitate child sexual abuse or exploitation, child sexual abuse material, grooming, trafficking, sexual exploitation, sexual extortion, or any attempt to exploit or endanger a child.",
+      "You must not use Kliqture to harass, threaten, abuse, impersonate, defraud, spam, intimidate, dox, exploit, or otherwise harm another person, or to create or distribute obscene, hateful, violent, deceptive, illegal, or otherwise objectionable user-generated content.",
     ],
   },
   {
@@ -69,7 +72,7 @@ const sections = [
   {
     title: "9. Disclaimers",
     body: [
-      "Kliqture is provided on an \"as is\" and \"as available\" basis. We do not guarantee that the platform will be uninterrupted, error-free, or that any user will achieve a particular outcome from using the service.",
+      'Kliqture is provided on an "as is" and "as available" basis. We do not guarantee that the platform will be uninterrupted, error-free, or that any user will achieve a particular outcome from using the service.',
     ],
   },
   {
@@ -99,6 +102,24 @@ export default function TermsOfService() {
       description="These Terms explain the rules for using Kliqture and the responsibilities that apply to users of the platform."
       lastUpdated="June 30, 2026"
       sections={sections}
-    />
+    >
+      <section className="rounded-[24px] border border-white/10 bg-white/[0.035] p-5">
+        <h2 className="text-xl font-semibold tracking-tight text-white">
+          Child safety standards
+        </h2>
+        <p className="mt-3 text-sm leading-7 text-white/65 md:text-base md:leading-8">
+          Kliqture maintains separate public child-safety standards for
+          prohibited conduct, reporting, enforcement, and the designated
+          child-safety contact. Review the{" "}
+          <Link
+            href="/child-safety"
+            className="text-teal-200 underline decoration-teal-200/35 underline-offset-4 transition hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400"
+          >
+            Child Safety Standards
+          </Link>
+          .
+        </p>
+      </section>
+    </LegalPageLayout>
   );
 }
