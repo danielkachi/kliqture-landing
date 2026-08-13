@@ -34,8 +34,10 @@ const sections = [
     body: [
       "Kliqture allows users to showcase work, discover collaborators, send collaboration requests, create workrooms, communicate with other users, share files, manage deliverables, and coordinate project activity.",
       "You agree not to use Kliqture to upload unlawful content, infringe intellectual property rights, harass others, defraud users, distribute malware, bypass platform payment flows, or interfere with the operation of the service.",
+      "Kliqture has zero tolerance for objectionable content or abusive behavior. Users may report content or accounts and may block other users from within the app.",
       "You must not use Kliqture to create, upload, request, distribute, promote, store, or facilitate child sexual abuse or exploitation, child sexual abuse material, grooming, trafficking, sexual exploitation, sexual extortion, or any attempt to exploit or endanger a child.",
       "You must not use Kliqture to harass, threaten, abuse, impersonate, defraud, spam, intimidate, dox, exploit, or otherwise harm another person, or to create or distribute obscene, hateful, violent, deceptive, illegal, or otherwise objectionable user-generated content.",
+      "Kliqture reviews abuse reports and moderation signals, prioritizes urgent safety concerns, and targets review of reported objectionable content within 24 hours. We may remove or restrict content, limit access to workrooms or collaboration features, suspend or terminate accounts, preserve audit records, and report unlawful conduct to appropriate authorities where required.",
     ],
   },
   {
