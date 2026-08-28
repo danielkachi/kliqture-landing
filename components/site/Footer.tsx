@@ -4,7 +4,7 @@ import { siteConfig } from "@/lib/site-config";
 
 const groups = [
   {
-    title: "Product",
+    title: "Product Links",
     links: [
       { label: "Discover Professionals", href: "/#discover" },
       { label: "For Businesses", href: "/#businesses" },
@@ -13,7 +13,7 @@ const groups = [
     ],
   },
   {
-    title: "Support",
+    title: "Support Links",
     links: [
       { label: "Contact", href: "/contact" },
       { label: "Refund & Cancellation Policy", href: "/refund-policy" },
@@ -22,7 +22,7 @@ const groups = [
     ],
   },
   {
-    title: "Legal",
+    title: "Legal Links",
     links: [
       { label: "Privacy Policy", href: "/privacy" },
       { label: "Terms of Service", href: "/terms" },
@@ -39,8 +39,8 @@ export function Footer() {
           <div>
             <p className="text-2xl font-semibold tracking-tight">Kliqture</p>
             <p className="mt-4 max-w-sm text-sm leading-7 text-white/56">
-              A professional Work & Collaboration Platform operated by{" "}
-              {siteConfig.companyName}
+              A professional work and collaboration platform for businesses,
+              organisations and skilled professionals.
             </p>
             <p className="mt-6 text-sm text-white/45">
               © 2026 Kliqture. Operated by {siteConfig.companyName}

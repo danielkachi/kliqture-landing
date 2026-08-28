@@ -23,7 +23,7 @@ export default function Home() {
           <div className="mx-auto grid max-w-[1680px] items-center gap-12 xl:grid-cols-[minmax(640px,680px)_minmax(0,1fr)] xl:gap-6 2xl:grid-cols-[minmax(820px,900px)_minmax(0,1fr)] 2xl:gap-12">
             <div className="max-w-[900px]">
               <p className="text-xs font-semibold uppercase tracking-[0.28em] text-teal-300/85">
-                PROFESSIONAL DISCOVERY AND WORK EXECUTION, CONNECTED
+                PROFESSIONAL IDENTITY, DISCOVERY AND WORK — CONNECTED
               </p>
               <h1 className="mt-6 max-w-[900px] text-5xl font-semibold leading-[1.02] tracking-tight text-white md:text-7xl xl:text-[56px] 2xl:text-[74px]">
                 <span className="xl:block xl:whitespace-nowrap">
@@ -35,9 +35,10 @@ export default function Home() {
                 </span>
               </h1>
               <p className="mt-7 max-w-2xl text-lg leading-8 text-white/64 md:text-xl md:leading-9">
-                Build a credible professional identity across multiple skills and real projects.
-                Discover the right expertise, connect for paid work or collaboration, and manage every
-                engagement from agreement to delivery in one connected platform.
+                Build a credible professional identity across multiple skills
+                and real projects. Find the right expertise for paid work or
+                collaboration, then carry the engagement from agreement to
+                delivery in one connected platform.
               </p>
               <div className="mt-9 flex flex-col gap-3 sm:flex-row">
                 <a
@@ -99,20 +100,20 @@ export default function Home() {
           <div className="mx-auto max-w-7xl">
             <SectionHeading
               eyebrow="Marketplace"
-              title="One platform. Two sides of professional work."
-              body="Kliqture connects organisations that need specialist execution with professionals who want credible, structured engagements."
+              title="One platform. Two sides of the same work."
+              body="A business is looking for the right expertise. A professional is looking for the right opportunity. Kliqture brings both sides together, then gives them one place to move the work forward."
               align="center"
             />
             <div className="mt-12 grid gap-5 md:grid-cols-2">
               <FeatureCard
                 label="Business side"
-                title="Find expertise and manage delivery"
-                body="Find specialists, publish projects or seek expertise, review applications, agree on terms, and manage delivery through structured workrooms."
+                title="Find the right expertise, then manage the work."
+                body="Search for specialists, publish work, review applications, agree on terms, and manage delivery through structured workrooms."
               />
               <FeatureCard
                 label="Professional side"
-                title="Build reputation through real work"
-                body="Build a credible body of work, discover relevant engagements, apply, collaborate, submit deliverables, and grow professional reputation."
+                title="Show your range, then turn it into real work."
+                body="Build a credible profile across your skills and projects, discover relevant opportunities, apply or collaborate, and let completed work strengthen your professional reputation."
               />
             </div>
           </div>
@@ -123,15 +124,15 @@ export default function Home() {
             <div>
               <SectionHeading
                 eyebrow="Discovery"
-                title="Discover trusted professionals beyond a conventional CV."
-                body="Search by people, skills, and projects, then review professional recommendations with ratings, location context, work history, and visible expertise."
+                title="A title can only tell you so much."
+                body="Discover professionals through the work behind the profile. Search by people, skills and projects, then review portfolio work, visible expertise, ratings, location context and professional history before deciding who you want to Hire or Collab with."
               />
               <ul className="mt-8 grid gap-3 text-sm leading-7 text-white/62 sm:grid-cols-2">
                 {[
-                  "Search people, skills, or projects",
-                  "Review skills and location context",
-                  "Compare ratings and professional signals",
-                  "Move from discovery into Hire or Collab",
+                  "Search people, skills or projects",
+                  "Explore skills and real work",
+                  "Compare professional signals",
+                  "Move directly into Hire or Collab",
                 ].map((item) => (
                   <li key={item} className="rounded-2xl border border-white/10 bg-white/[0.03] px-4 py-3">
                     {item}
@@ -170,18 +171,18 @@ export default function Home() {
             <div className="order-1 lg:order-2">
               <SectionHeading
                 eyebrow="Seek Expertise"
-                title="From expertise request to qualified application."
-                body="A business can publish a project or seek expertise, while professionals review the scope, required skills, budget range, and timeline before applying."
+                title="Turn a need into a clear opportunity."
+                body="When a business knows what it needs, it can publish a project or seek expertise with the scope, required skills, budget range and timeline visible from the start."
               />
               <div className="mt-8 space-y-4 text-sm leading-7 text-white/62 md:text-base">
                 <p>
-                  Kliqture presents engagements as structured professional work,
-                  not conventional recruiting posts. Businesses can review
-                  applications and select who they want to work with.
+                  Professionals can review the work before applying, so both
+                  sides begin with clearer expectations.
                 </p>
                 <p>
-                  The engagement record keeps the brief, skills, application
-                  context, and next steps close to the work that follows.
+                  Applications stay connected to the engagement, keeping the
+                  original brief, skills and context close to whatever happens
+                  next.
                 </p>
               </div>
             </div>
@@ -192,8 +193,8 @@ export default function Home() {
           <div className="mx-auto max-w-7xl">
             <SectionHeading
               eyebrow="Professional reputation"
-              title="Professionals show more than a profile."
-              body="Profiles, portfolio projects, media, documented work, skills, ratings, and completed engagements help professionals build reputation through evidence."
+              title="A professional profile should grow with the work."
+              body="Skills, portfolio projects, media, ratings and completed engagements build a body of evidence over time. Kliqture gives professionals room to show more than one side of what they can do — and let the work speak for them."
               align="center"
             />
             <div className="relative mt-14 h-[760px] overflow-hidden rounded-[36px] border border-white/10 bg-[radial-gradient(circle_at_50%_15%,rgba(37,99,235,0.2),transparent_34%),rgba(255,255,255,0.025)] pb-16 md:h-[820px] lg:h-[860px]">
@@ -227,13 +228,13 @@ export default function Home() {
             <div>
               <SectionHeading
                 eyebrow="Workrooms"
-                title="Work happens in a structured workroom."
-                body="Hire and Collab workrooms keep communication tied to a real engagement, including offers, agreed terms, shared records, deliverables, and project context."
+                title="Once there’s a fit, the work stays connected."
+                body="Offers, agreed terms, conversations, files, deliverables and next actions stay around the same engagement."
               />
               <p className="mt-7 text-base leading-8 text-white/62">
-                Instead of losing project decisions inside scattered messages,
-                Kliqture keeps the conversation close to the work, files, and
-                next actions.
+                Instead of project decisions disappearing into scattered
+                messages, the workroom keeps the conversation close to the work,
+                the files and what needs to happen next.
               </p>
             </div>
             <div className="relative mx-auto w-full max-w-[470px] lg:-ml-2">
@@ -269,8 +270,8 @@ export default function Home() {
             <div>
               <SectionHeading
                 eyebrow="Milestones"
-                title="Milestones turn agreements into progress."
-                body="Tasks, milestone status, submissions, review, revisions, and delivery records help both sides understand where the engagement stands."
+                title="Turn an agreement into visible progress."
+                body="Break the engagement into clear milestones. Track tasks, submit deliverables, review the work, request revisions when needed, and keep the delivery record in one place."
               />
               <div className="mt-8 border-l border-white/12 pl-5">
                 {["Tasks", "Submission", "Review", "Revision when needed", "Delivery record"].map(
@@ -291,19 +292,17 @@ export default function Home() {
             <div>
               <SectionHeading
                 eyebrow="Payment tracking"
-                title="Payments linked to completed work"
-                body="Payments relate to agreed professional engagements, documented milestone progress, submitted deliverables, and transaction activity connected to the workroom."
+                title="Keep payment context tied to the work."
+                body="Milestone progress, deliverables and payment activity can remain connected to the same engagement record, making it easier to see what was agreed, what was delivered and what happened next."
               />
               <div className="mt-8 space-y-4 text-sm leading-7 text-white/62 md:text-base">
                 <p>
-                  Clients can review work before the corresponding release
-                  action, and payment processing may be provided by approved
-                  third-party payment-service providers.
+                  Where payment processing is available, it is provided through
+                  approved third-party payment providers.
                 </p>
                 <p>
-                  Refunds, cancellations, and disputes are governed by
-                  applicable policies, transaction status, provider rules, and
-                  the available engagement record.
+                  Refunds, cancellations and disputes follow the applicable
+                  policies, transaction status and provider rules.
                 </p>
               </div>
             </div>
@@ -330,8 +329,8 @@ export default function Home() {
           <div className="mx-auto max-w-7xl">
             <SectionHeading
               eyebrow="How it works"
-              title="A clear path from discovery to completion."
-              body="Kliqture keeps every stage of professional work clear for businesses and professionals."
+              title="From finding the right person to finishing the work."
+              body="Whether you’re hiring or being hired, Kliqture keeps each stage connected."
               align="center"
             />
             <div className="mt-12 grid gap-4 md:grid-cols-4">
@@ -351,15 +350,15 @@ export default function Home() {
           <div className="mx-auto max-w-7xl">
             <SectionHeading
               eyebrow="Trust & support"
-              title="Clear records for work, support, and review."
-              body="Kliqture supports trust through structured work records, offer and milestone history, deliverable records, professional profiles, ratings, privacy controls, and support routes."
+              title="When something needs to be reviewed, the record is already there."
+              body="Offers, milestone history, submissions, deliverables and account controls create a clearer record for support, review and dispute handling."
               align="center"
             />
             <div className="mt-10 grid gap-4 md:grid-cols-3">
               {[
-                ["Work records", "Offers, milestone activity, submissions, and deliverables remain attached to the engagement."],
-                ["Support routes", "Users can contact support, review refund and cancellation guidance, and start dispute review when needed."],
-                ["Account controls", "Privacy, terms, and account-deletion information remain publicly accessible."],
+                ["Work records", "Keep important engagement activity attached to the work. Offers, milestone activity, submissions and deliverables remain part of the engagement record."],
+                ["Support routes", "Know where to go when something needs attention. Access support, refund and cancellation guidance, and dispute-resolution information when needed."],
+                ["Account controls", "Keep essential account information accessible. Privacy, terms, safety and account-deletion information remain easy to find."],
               ].map(([title, body]) => (
                 <FeatureCard key={title} title={title} body={body} />
               ))}
@@ -389,7 +388,7 @@ export default function Home() {
             <SectionHeading
               eyebrow="Company"
               title="Operated by Blueprint Fintech Solutions Ltd."
-              body="Kliqture is the company's consumer-facing professional collaboration marketplace for businesses, organisations, and skilled professionals."
+              body="Kliqture is operated by Blueprint Fintech Solutions Ltd. as a professional work and collaboration platform for businesses, organisations and skilled professionals."
             />
             <div className="mt-8 grid gap-4 text-sm text-white/62 md:grid-cols-2">
               <p>

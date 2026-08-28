@@ -10,19 +10,19 @@ export const navItems = [
 export const workflowSteps = [
   {
     title: "Discover or publish",
-    body: "Businesses find professionals, while professionals discover relevant projects and engagements.",
+    body: "Find professionals, explore relevant work, or publish the expertise you need.",
   },
   {
     title: "Agree on the work",
-    body: "The parties review the scope, discuss terms, and create an offer or collaboration agreement.",
+    body: "Review the scope, discuss terms, and create a clear Hire or Collab agreement.",
   },
   {
     title: "Work through milestones",
-    body: "Tasks, communication, submissions, and revisions remain connected to the workroom.",
+    body: "Keep communication, tasks, submissions, reviews and revisions connected to the engagement.",
   },
   {
     title: "Deliver and complete",
-    body: "Completed deliverables, milestone decisions, payment activity, and reputation form part of the engagement record.",
+    body: "Complete the work with a clear record of delivery and engagement history.",
   },
 ];
 
@@ -30,61 +30,60 @@ export const faqs = [
   {
     question: "What is Kliqture?",
     answer:
-      "Kliqture is a professional work and collaboration platform where professionals and businesses showcase real work, discover the right people, and manage paid projects or collaborations from agreement to delivery in one connected platform.",
+      "Kliqture is a professional work and collaboration platform where businesses and professionals showcase real work, discover the right people or opportunities, and manage engagements from agreement to delivery in one connected place.",
   },
   {
     question: "Who can use Kliqture?",
     answer:
-      "Businesses, brands, startups, SMEs, organisations, and skilled professionals can use Kliqture to find each other and manage project-based professional work.",
+      "Kliqture is built for skilled professionals, freelancers and creators, as well as businesses and organisations looking for expertise, collaborators or structured ways to manage professional work.",
   },
   {
     question: "Is Kliqture a job board?",
     answer:
-      "No. Kliqture is built around professional engagements, workrooms, offers, milestones, deliverables, and reputation rather than conventional employment listings.",
+      "No. Kliqture is a professional collaboration marketplace. Alongside discovering opportunities, users can showcase their work, find expertise, Hire or Collab with others, and manage the engagement through structured workrooms.",
   },
   {
     question: "How do businesses find professionals?",
     answer:
-      "Businesses can discover professionals by skills, profiles, portfolio work, ratings, location context, and project relevance. They can also publish a request for expertise.",
+      "Businesses can search by people, skills and projects, review professional profiles and portfolio work, or publish a project or expertise request for relevant professionals to discover and apply to.",
   },
   {
     question: "How do professionals apply for engagements?",
     answer:
-      "Professionals review the scope, skills, budget range, and timeline for a relevant engagement, then apply when they believe they can deliver the work.",
+      "Professionals can review the engagement brief, required skills, budget range and timeline before applying. Businesses can then review applications and decide who they want to move forward with.",
   },
   {
     question: "What is a Hire Room?",
     answer:
-      "A Hire Room is a structured space for a direct professional engagement where communication, offers, milestones, deliverables, and payment activity can stay connected.",
+      "A Hire Room is a structured workspace for a professional engagement. It keeps conversations, offers, agreed terms, files, milestones, deliverables and related work records connected in one place.",
   },
   {
     question: "What is a Collab Room?",
     answer:
-      "A Collab Room is a shared workroom for collaboration, messaging, tasks, files, and engagement records between the people working together.",
+      "A Collab Room is a shared workspace for people building something together. It keeps the collaboration, conversations, files, tasks, agreements and deliverables organised around the same project.",
   },
   {
     question: "How do milestones and deliverables work?",
     answer:
-      "Milestones help break agreed work into reviewable progress. Professionals can submit deliverables, clients can review the work, and revision records can stay tied to the engagement.",
+      "An engagement can be organised into milestones so both sides can see what needs to be completed. Professionals can submit deliverables, clients can review the work and request revisions where needed, and the resulting activity remains connected to the engagement.",
   },
   {
     question: "How are payments related to engagements?",
     answer:
-      "Payments are connected to agreed professional work, milestone progress, submissions, and transaction records. Payment processing may be provided by approved third-party payment-service providers.",
+      "Where payment features are available, payment activity can be tied to the relevant engagement and its milestones or deliverables. Payment processing is provided through approved third-party providers and remains subject to applicable provider rules and Kliqture policies.",
   },
   {
     question: "What happens when there is a cancellation or dispute?",
     answer:
-      "Eligibility for cancellation, refund, or dispute review depends on transaction status, work completed, the parties' agreement, available records, and applicable provider rules.",
+      "Cancellations, refunds and disputes are handled according to the applicable Kliqture policies, engagement record, transaction status and payment-provider rules. Users can also contact Kliqture support when review is needed.",
   },
   {
     question: "How can I contact Kliqture support?",
     answer:
-      "Contact support at support@kliqture.com and include the relevant account, engagement, milestone, transaction, and supporting records where applicable.",
+      "You can contact Kliqture through the Contact page or email support@kliqture.com.",
   },
   {
     question: "Who operates Kliqture?",
-    answer:
-      "Kliqture is operated by Blueprint Fintech Solutions Ltd. as its consumer-facing professional collaboration marketplace.",
+    answer: "Kliqture is operated by Blueprint Fintech Solutions Ltd.",
   },
 ];
