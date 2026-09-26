@@ -28,6 +28,14 @@ export const metadata: Metadata = {
     url: "https://www.kliqture.com",
     siteName: "Kliqture",
     type: "website",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Kliqture",
+      },
+    ],
   },
 
   twitter: {
@@ -35,6 +43,7 @@ export const metadata: Metadata = {
     title: "Kliqture | Professional Work & Collaboration Platform",
     description:
       "Professionals and businesses showcase real work, discover the right people, and manage paid projects or collaborations from agreement to delivery in one connected platform.",
+    images: ["/og-image.png"],
   },
 };
 
