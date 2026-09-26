@@ -8,17 +8,28 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.kliqture.com"),
+
   title: "Kliqture | Professional Work & Collaboration Platform",
+
   description:
     "Professionals and businesses showcase real work, discover the right people, and manage paid projects or collaborations from agreement to delivery in one connected platform.",
+
   applicationName: "Kliqture",
+
+  alternates: {
+    canonical: "/",
+  },
+
   openGraph: {
     title: "Kliqture | Professional Work & Collaboration Platform",
     description:
       "Professionals and businesses showcase real work, discover the right people, and manage paid projects or collaborations from agreement to delivery in one connected platform.",
+    url: "https://www.kliqture.com",
     siteName: "Kliqture",
     type: "website",
   },
+
   twitter: {
     card: "summary_large_image",
     title: "Kliqture | Professional Work & Collaboration Platform",
