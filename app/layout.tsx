@@ -67,6 +67,12 @@ const structuredData = [
     },
     description:
       "Kliqture is a professional work and collaboration platform where professionals and businesses showcase real work, discover the right people, and manage projects or collaborations from agreement to delivery.",
+    sameAs: [
+      "https://www.linkedin.com/company/kliqture",
+      "https://www.instagram.com/kliqture",
+      "https://x.com/kliqture",
+      "https://www.youtube.com/@Kliqture",
+    ],
   },
   {
     "@context": "https://schema.org",
