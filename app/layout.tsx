@@ -52,6 +52,39 @@ export const viewport: Viewport = {
   colorScheme: "dark",
 };
 
+const structuredData = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://www.kliqture.com/#organization",
+    name: "Kliqture",
+    url: "https://www.kliqture.com",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://www.kliqture.com/icon-512.png",
+      width: 512,
+      height: 512,
+    },
+    description:
+      "Kliqture is a professional work and collaboration platform where professionals and businesses showcase real work, discover the right people, and manage projects or collaborations from agreement to delivery.",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "@id": "https://www.kliqture.com/#application",
+    name: "Kliqture",
+    url: "https://www.kliqture.com",
+    applicationCategory: "BusinessApplication",
+    operatingSystem: "iOS, Android",
+    description:
+      "Kliqture helps professionals and businesses showcase real work, discover talent and opportunities, collaborate, hire, and manage work through connected project workspaces.",
+    image: "https://www.kliqture.com/og-image.png",
+    publisher: {
+      "@id": "https://www.kliqture.com/#organization",
+    },
+  },
+];
+
 export default function RootLayout({
   children,
 }: {
@@ -59,7 +92,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={inter.variable}>
-      <body className="font-sans">{children}</body>
+      <body className="font-sans">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(structuredData),
+          }}
+        />
+        {children}
+      </body>
     </html>
   );
 }
