@@ -55,6 +55,16 @@ export const viewport: Viewport = {
 const structuredData = [
   {
     "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "https://www.kliqture.com/#website",
+    url: "https://www.kliqture.com",
+    name: "Kliqture",
+    publisher: {
+      "@id": "https://www.kliqture.com/#organization",
+    },
+  },
+  {
+    "@context": "https://schema.org",
     "@type": "Organization",
     "@id": "https://www.kliqture.com/#organization",
     name: "Kliqture",
